@@ -3,9 +3,12 @@ from pymongo import MongoClient
 
 app = Flask(__name__)
 
-# Connecting to MongoDB
-client = MongoClient('mongodb://mongodb:27017/')
-db = client['flask_db']
+
+# Replace 'localhost' with the MongoDB container name
+client = MongoClient("mongodb://flask-mongodb:27017/")
+db = client["mydatabase"]
+
+
 visits_collection = db['visits']
 
 @app.route('/')
