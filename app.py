@@ -21,5 +21,7 @@ def index():
     visits_collection.update_one({'_id': 'visit_count'}, {'$inc': {'count': 1}})
     return f'Hello! This page has been visited {visit["count"] + 1} times.'
 
+
+print("Hello World")
 if __name__ == "__main__":
     app.run(debug=True, host='0.0.0.0')
