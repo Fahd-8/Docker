@@ -16,7 +16,6 @@ EXPOSE 5000
 
 # Set Flask app environment variable
 # Set Flask app environment variable
-
 ENV FLASK_APP=app.py
 
 # Run the Flask app
