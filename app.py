@@ -22,6 +22,6 @@ def index():
     return f'Hello! This page has been visited {visit["count"] + 1} times.'
 
 
-print("Hello World")
+print("Hello")
 if __name__ == "__main__":
     app.run(debug=True, host='0.0.0.0')
